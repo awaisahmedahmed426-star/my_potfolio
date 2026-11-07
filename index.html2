@@ -1,0 +1,120 @@
+YPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        /* CSS Styling: Page ko khoobsurat banane ke liye */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .form-card {
+            background: #ffffff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 450px;
+        }
+
+        .form-card h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 6px;
+            color: #555;
+            font-weight: 600;
+        }
+
+        .input-group input, 
+        .input-group select, 
+        .input-group textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            outline: none;
+            font-size: 14px;
+        }
+
+        .input-group input:focus, 
+        .input-group textarea:focus {
+            border-color: #667eea;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 12px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .btn-submit:hover {
+            background: #5a67d8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-card">
+        <h2>Join Our Platform</h2>
+
+        <form action="#" method="POST">
+            <div class="input-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Full Name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="example@gmail.com" required>
+            </div>
+
+            <div class="input-group">
+                <label for="role">Select Role</label>
+                <select id="role">
+                    <option value="student">Student</option>
+                    <option value="developer">Developer</option>
+                    <option value="designer">Designer</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="3" placeholder="write your massage "></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Submit Form</button>
+        </form>
+    </div>
+
+</body>
+</html>
